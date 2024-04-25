@@ -46,7 +46,7 @@ GROUP BY
     Issuers.ISSUER_RFC
 ORDER BY
     AYM.year DESC,
-    AYM.month DESC);
+    AYM.month DESC)
 
 
 
