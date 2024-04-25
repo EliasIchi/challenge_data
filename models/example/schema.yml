@@ -1,0 +1,7 @@
+
+version: 2
+
+models:
+
+  - name: ejercicio_1
+    description: "A starter dbt model"
