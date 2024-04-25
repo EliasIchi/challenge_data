@@ -17,7 +17,7 @@ WITH consecutivo AS (
         WITH AllYearMonths AS (
             SELECT DISTINCT YEAR(issued_at) AS year, MONTH(issued_at) AS month
             FROM DBT.AVENU_SCHEMA.INVOICE
-            WHERE issued_at < (
+            WHERE issued_at > (
                 SELECT DATEADD(month, -24, MAX(issued_at))
                 FROM DBT.AVENU_SCHEMA.INVOICE
                 WHERE TYPE = 'I'
