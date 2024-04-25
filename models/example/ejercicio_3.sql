@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 -- Selecciona los business_product de tipo "Invoice Advance" junto con la información de la invoice_advance asociada (si existe)
 SELECT DISTINCT bp.id AS business_product_id, ia.id, ia.state
 FROM Business_Product bp
