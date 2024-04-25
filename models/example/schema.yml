@@ -5,3 +5,6 @@ models:
 
   - name: ejercicio_1
     description: "A starter dbt model"
+
+  - name: ejercicio_2
+    description: "A starter dbt model"
